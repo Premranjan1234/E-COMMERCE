@@ -1,0 +1,77 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:white;
+    box-shadow: 0 8px 6px -6px black;
+}
+.logo{
+  height:40px;
+  width:60px;
+  padding:10px;
+  margin:10px;
+}
+.nav-items{
+  display:flex;
+  margin-top: 20px;
+}
+.home{
+  margin-right:40px ;
+  
+}
+.cart-wishlist-login{
+  display:flex;
+}
+
+.cart{
+  margin-right: 20px;
+  list-style-type: none;
+}
+.wishlist{
+  margin-right:20px;
+  list-style-type: none;
+}
+.login{
+  height:20px;
+  margin-right:20px;
+  }
+.login-icon{
+  list-style-type: none;
+}
+.searchbar{
+  border-radius: 25px;
+  margin-top: 20px;
+}
+.shopping{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height:50vh;
+  margin-top:20px;
+  border-radius: 30px;
+
+}
+.brand-items{
+  background-color: pink;
+  display:flex;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 10px;
+  width:70%;
+  height:17vh;
+  
+}
+.brand-type{
+  border-radius:100%;
+  margin:20px;
+  width:12%;
+  padding:10px;
+  height:70px;
+
+}
+
+
+
+
+
