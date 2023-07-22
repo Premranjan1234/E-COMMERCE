@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom";
 const Navbar=()=>{
     return(
         <div className="navbar">
             <img className="logo"src="https://res.cloudinary.com/sweta-agarwalla/image/upload/v1683874845/logo.png " alt="image"/>
             <div className="nav-items">
+                <Link to="/">
                 <div className="home">Home</div>
+                </Link>
+                <Link to="/shop">
                 <div className="shop">Shop</div>
+                </Link>
             </div>
             <div>
                 <input className="searchbar" type="text" placeholder="Search"/>

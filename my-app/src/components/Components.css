@@ -1,0 +1,14 @@
+.featured-data{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+  }
+  .few-products{
+    border: 10px solid black;
+    padding: 5px;
+    margin: 20px;
+    width:222px;
+    height: 50vh;
+}
+  

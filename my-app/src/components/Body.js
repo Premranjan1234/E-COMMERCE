@@ -1,4 +1,23 @@
+import {useEffect,useState} from 'react';
+import { useProducts } from '../contexts/Productcontext';
+import  {FewproductCards} from './Fewproductcards';
+import {Fewcategories} from './Fewcategories'
+import Footer from './Footer';
+
+
 const Body=()=>{
+    const {productState}=useProducts();
+    const {productData}=productState;
+    const {categoriesData}=productState;
+    console.log(categoriesData);
+    console.log(productData);
+    let featuredData=[];
+    if(productData.length>0)
+    {
+        featuredData=[productData[22],productData[18],productData[5],productData[29],productData[19]];
+    }
+
+
     return(
         <div>
             <img
@@ -16,9 +35,38 @@ const Body=()=>{
                     <img className="brand-type" src="https://res.cloudinary.com/sweta-agarwalla/image/upload/v1683887321/dolce_msbiub.png" alt="D&G"/>
 
                 </div>
+
              </div>
+             <div className="description">
+                <h3 className="description1">We provide best customer experience</h3>
+                <p className="description2">we ensure that our customer have a best shopping experience</p>
+             </div>
+             <div className="product-listing">
+                <h1>product you make like✨</h1>
+                <div className="featured-data">{featuredData?.map((data)=>{
+                    return(
+                        <div>
+                          <FewproductCards data={data}/>
+                        </div>
+                    );
+                })}
+                </div>
+            </div>
+            <div className="product-listing">
+                <h1>currated pics✨</h1>
+                <div className="featured-data">{categoriesData?.map((data)=>{
+                    return(
+                        <div>
+                          <Fewcategories data={data}/>
+                        </div>
+                    );
+                })}
+                </div>
+            </div>
+            <Footer/>
+            
 
         </div>
-    )
+    );
 };
 export default Body;

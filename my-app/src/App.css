@@ -1,4 +1,5 @@
 .navbar{
+    position:sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +19,13 @@
 .home{
   margin-right:40px ;
   
+  
 }
+a{
+  text-decoration: none !important;
+  color:inherit !important;
+}
+
 .cart-wishlist-login{
   display:flex;
 }
@@ -53,7 +60,7 @@
 
 }
 .brand-items{
-  background-color: pink;
+  background-color: lightpink;
   display:flex;
   margin-left: auto;
   margin-right:auto;
@@ -68,8 +75,92 @@
   width:12%;
   padding:10px;
   height:70px;
+}
+.description{
+  margin-top:50px;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  
 
 }
+
+.description1{
+  border-right:2px solid black ;
+  width:60%;
+  padding-right:50px ;
+}
+.description2{
+  padding:10px;
+}
+.product-listing{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
+}
+.featured-data{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.few-products{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    margin: 20px;
+    width:222px;
+    height: 63vh;
+}
+.category-image{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer{
+  background-color: rgb(247, 9, 211);
+  margin-top:30px;
+  height:20vh;
+  display:flex;
+  color:white;
+}
+.footer-one{
+  width:70%;
+  padding-right:70px;
+  padding:30px;
+  
+}
+.footer-two{
+  width:30%;
+  justify-content: space-between;
+  display:flex;
+
+}
+.footer-two>ul{
+  list-style-type: none;
+  display:flex;
+  flex-direction: column;
+  margin-right:50px;
+}
+.shop-page{
+  display:flex;
+  justify-content: space-between;
+  
+}
+.Filters{
+  width:20%;
+  margin:30px;
+  height:100vh;
+  border:2px solid black;
+  padding:10px;
+
+}
+.shop-product{
+  width:60%;
+  margin:20px;
+  padding:10px;
+
+}
+
 
 
 
