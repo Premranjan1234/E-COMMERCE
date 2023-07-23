@@ -4,6 +4,8 @@ import Body from "./components/Body";
 import Shop from "./components/Shop";
 import {createBrowserRouter,Outlet} from 'react-router-dom'
 import { Productcontext } from "./contexts/Productcontext";
+import SingleProduct from "./components/SingleProduct";
+import Error from "./components/Error";
 
 
 
@@ -21,6 +23,7 @@ const Approuter=createBrowserRouter([
   {
     path:"/",
     element:<App/>,
+    errorElement:<Error/>,
     children:[
       {
         path:"/",
@@ -29,6 +32,10 @@ const Approuter=createBrowserRouter([
       {
          path:"/shop",
          element:<Shop/>,
+      },
+      {
+        path:"/product/:id",
+        element:<SingleProduct/>,
       }
 
     ],
