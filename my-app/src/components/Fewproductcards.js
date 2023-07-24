@@ -12,6 +12,7 @@ export const FewproductCards=({data})=>{
     <h2 style={{height:20 , margin:5}}>{brand}</h2>
     <p>{title}</p>
     <h2>Rs {price} |  {ratings?.value}⭐</h2>
+    
   </div>
   
   );

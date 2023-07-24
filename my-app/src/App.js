@@ -6,6 +6,7 @@ import {createBrowserRouter,Outlet} from 'react-router-dom'
 import { Productcontext } from "./contexts/Productcontext";
 import SingleProduct from "./components/SingleProduct";
 import Error from "./components/Error";
+import { Filterprovider } from "./contexts/Filtercontext";
 
 
 
@@ -13,9 +14,12 @@ function App() {
   return (
     <div className="App">
       <Productcontext>
+      <Filterprovider>
       <Navbar/>
       <Outlet/>
+      </Filterprovider>
       </Productcontext>
+      
     </div>
   );
 }
