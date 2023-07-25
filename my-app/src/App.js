@@ -7,6 +7,9 @@ import { Productcontext } from "./contexts/Productcontext";
 import SingleProduct from "./components/SingleProduct";
 import Error from "./components/Error";
 import { Filterprovider } from "./contexts/Filtercontext";
+import Cart from "./components/Cart";
+import Wishlist from "./components/Wishlist";
+import Profile from "./components/Profile";
 
 
 
@@ -40,7 +43,19 @@ const Approuter=createBrowserRouter([
       {
         path:"/product/:id",
         element:<SingleProduct/>,
-      }
+      },
+       {
+        path:"/cart",
+        element:<Cart/>
+       },
+       {
+        path:"/wishlist",
+        element:<Wishlist/>
+       },
+       {
+        path:"/profile",
+        element:<Profile/>
+       }
 
     ],
 

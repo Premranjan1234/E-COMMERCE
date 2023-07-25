@@ -15,11 +15,18 @@ const Navbar=()=>{
                 <input className="searchbar" type="text" placeholder="Search"/>
             </div>
             <ul className="cart-wishlist-login">
+                <Link to="/cart">
                 <li className="cart">🛒-0</li>
+                </Link>
+                <Link to="/wishlist">
                 <li className="wishlist">🖤-0</li>
+                </Link>
+                <Link to="/profile">
                 <li className="login-icon">
+                    
                     <img className="login" src="https://cdn1.iconfinder.com/data/icons/users-outline-1/40/24-256.png" alt="login"/>
                 </li>
+                </Link>
             </ul>
 
         </div>

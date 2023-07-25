@@ -28,6 +28,7 @@ a{
 
 .cart-wishlist-login{
   display:flex;
+  justify-content: space-evenly;
 }
 
 .cart{
@@ -35,10 +36,12 @@ a{
   list-style-type: none;
 }
 .wishlist{
+  margin-left: 30px;
   margin-right:20px;
   list-style-type: none;
 }
 .login{
+  margin-left: 20px;
   height:20px;
   margin-right:20px;
   }
@@ -168,6 +171,21 @@ a{
   margin-right: auto;
   align-items: center;
   width:70%;
+}
+.cart{
+  margin-left: auto;
+  margin-right:auto;
+  align-content: center;
+  width:60%;
+}
+.cart>img{
+  height:40vh;
+}
+
+.wishlist{
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
 }
 
 
